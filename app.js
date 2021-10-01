@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 
 
 // Create mongo connection
-mongo_URI = 'mongodb://localhost:27017/file_upload_app'
+mongo_URI = 'mongodb url here'
 const conn = mongoose.createConnection(mongo_URI);
 
 // Init gfs
@@ -152,9 +152,3 @@ mongoose.connect(mongo_URI)
         console.log('Server running')
     }))
     .catch((err) => console.log(err))
-
-// //server setup
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//   console.log(`Server running on http://localhost:${PORT}`);
-// });
